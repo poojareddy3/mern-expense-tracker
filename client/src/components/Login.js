@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {TextField, Button, Box, Typography} from '@mui/material'
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
+import apiUrl from '../apiConfig';
 
 const Login = () => {
   const history = useNavigate()
@@ -18,7 +19,7 @@ const handleChange = (e) => {
 }
 
    const sendRequest = async () => {
-       const res = await axios.post('http://localhost:3000/api/login',{
+       const res = await axios.post(`${apiUrl}/login`,{
            email: inputs.email,
            password: inputs.password
        }).catch(err => console.log(err))

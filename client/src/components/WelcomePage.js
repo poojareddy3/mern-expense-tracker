@@ -3,6 +3,7 @@ import React,{useEffect, useState } from 'react'
 import { NavLink } from "react-router-dom";
 import axios from 'axios'
 import Header from './Header'
+import apiUrl from '../apiConfig';
 axios.defaults.withCredentials = true;
 
 const WelcomePage = () => {
@@ -10,7 +11,7 @@ const WelcomePage = () => {
   const [user, setUser] = useState()
 
  const sendRequest = async() => {
-   const res = await axios.get('http://localhost:3000/api/user',{
+   const res = await axios.get(`${apiUrl}/user`,{
       withCredentials: true
    }).catch(err => console.log(err))
    const data = await res.data;

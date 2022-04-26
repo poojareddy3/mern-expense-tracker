@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {TextField, Button, Box, Typography} from '@mui/material'
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
+import apiUrl from '../apiConfig';
 
 const Signup = () => {
    const history = useNavigate();
@@ -20,7 +21,7 @@ const Signup = () => {
    }
 
       const sendRequest = async () => {
-          const res = await axios.post('http://localhost:3000/api/signup',{
+          const res = await axios.post(`${apiUrl}/signup`,{
               name: inputs.name,
               email: inputs.email,
               password: inputs.password
