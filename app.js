@@ -13,7 +13,10 @@ const app = express();
 //     res.header("Access-Control-Allow-Credentials", true);
 //     next();
 //   }));
-app.use(cors({credentials: true, origin: true}))
+app.use(cors({
+  credentials: true,
+  origin: true}));
+// app.use(cors({credentials: true, origin: true}))
 app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
@@ -21,7 +24,6 @@ app.use(express.urlencoded({ extended: false}))
 
 app.use(logger('dev'))
 
-//app.use('/api', routes)
 app.use('/api', routes)
 app.use('/api', router)
 // app.use('/api', (req, res, next) => {
