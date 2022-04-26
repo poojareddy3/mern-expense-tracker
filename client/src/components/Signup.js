@@ -37,7 +37,7 @@ const Signup = () => {
     }
 
   return (
-    <div>
+    <div className='signupPage'>
         <form onSubmit={handleSubmit}>
             <Box
             marginRight='auto'
@@ -51,7 +51,7 @@ const Signup = () => {
                 <TextField name='name' onChange={handleChange} value={inputs.name} variant='outlined' placeholder='Name' margin="normal" size="small" />
                 <TextField name='email' onChange={handleChange} type={'email'} value={inputs.email} variant='outlined' placeholder='Email' margin="normal" size="small" />
                 <TextField name='password' onChange={handleChange} type='password' value={inputs.password} variant='outlined' placeholder='Password' margin="normal" size="small" />
-                <Button variant='contained' type="submit">SignUp</Button>
+                <br /><Button variant='contained' type="submit">SignUp</Button>
             </Box>
          </form>
     </div>

@@ -12,6 +12,9 @@ function App() {
        <div className='home'>
       <Home />
       </div>
+      <div className='homePage'>
+         <h1>MERN Stack Expense Tracker App</h1>
+      </div>
    <main>
       <Routes>
          <Route path='/login' element={<Login />} />

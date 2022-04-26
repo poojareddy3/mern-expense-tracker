@@ -7,12 +7,16 @@
 * {
   box-sizing: border-box;
   position: relative;
+  /* background-color:lightblue; */
 }
-
 .home{
   display: flex;
   flex-direction: column;
-
+}
+.homePage{
+  color: #bf2a90;
+  margin-left: 450px;
+  margin-bottom: 50px;
 }
 .navDiv{
   background-color: #06254b;
@@ -23,11 +27,30 @@
   height: 12px;
   /* color:  #062d5f; */
 }
+.loginPage{
+  background-color:rgb(148, 198, 215);
+  margin: 0 auto;
+  padding-top: 60px;
+  width: 400px;
+  height: 400px;
+}
+.signupPage{
+  background-color:rgb(148, 198, 215);
+  margin: 0 auto;
+  padding-top:45px;
+  width: 400px;
+  height: 400px;
+}
 .welcomeDiv{
   display: flex;
   flex-direction: row;
   position: relative;
+  background-color:rgb(191, 212, 219);
+  position: relative;
+  height: 100vh;
+  min-height : 100vh;
 }
+
 .user{
   padding-right: 170px;
   color:  #c61c88;
@@ -43,7 +66,7 @@
   flex-direction: column;
 }
 .title{
-  color: #e5aa21;
+  color: #a0730b;
   margin-top: 60px;
 }
 
@@ -106,19 +129,22 @@
 
 .history h3{
   /* color: rgb(225, 21, 17); */
-  font-size: larger;
+  font-size: x-large;
   color: #fff;
 }
 .history .list {
   display: flex;
   flex-direction: column;
   color: #fff;
+  cursor: pointer;
 }
 .out .delete-btn{
    background-color: rgb(146, 13, 113);
    border: none;
-   border-radius: 25px;
+   border-radius: 30px;
    margin-left: 10px;
+   height: 20px;
+   width: 20px;
    color: #fff;
    font-size: medium;
 }
@@ -172,7 +198,7 @@
   width: 350px;
   padding: 10px;
   align-items: center;
- background-color:rgb(175, 113, 167);
+  background-color:rgb(149, 100, 143);
  color: #fff;
  font-weight: bold;
 }

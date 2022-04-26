@@ -34,7 +34,7 @@ const handleChange = (e) => {
  }
 
 return (
- <div>
+ <div className='loginPage'>
      <form onSubmit={handleSubmit}>
          <Box
          marginRight='auto'
@@ -44,10 +44,10 @@ return (
          flexDirection={"column"}
          justifyContent='center'
          alignItems='center'>
-         <Typography variant='h3' color={'#062d5f'}>Login</Typography>
+         <Typography variant='h3' color={'#062d5f'}>Login </Typography><br />
              <TextField  name='email' onChange={handleChange} type={'email'} value={inputs.email} variant='outlined' placeholder='Email' margin="normal" size="small" />
              <TextField  name='password' onChange={handleChange} type='password' value={inputs.password} variant='outlined' placeholder='Password' margin="normal" size="small" />
-             <Button variant='contained' type="submit">Login</Button>
+             <br /><Button variant='contained' type="submit">Login</Button>
          </Box>
       </form>
  </div>
