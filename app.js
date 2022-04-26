@@ -8,11 +8,11 @@ const cookieParser = require('cookie-parser')
 
 const app = express();
 //app.use (cors())
-app.use((req, res, next) => {
+app.use(cors((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header("Access-Control-Allow-Credentials", true);
     next();
-  });
+  }));
 //app.use(cors({credentials: true}))
 app.use(cookieParser())
 app.use(express.json())
