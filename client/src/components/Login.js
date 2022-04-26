@@ -23,6 +23,7 @@ const handleChange = (e) => {
            email: inputs.email,
            password: inputs.password
        }).catch(err => console.log(err))
+       console.log(res)
        const data = await res.data;
        return data;
    }
