@@ -10,7 +10,7 @@ function Header() {
     return(
         <div className='mainDiv'>
             <div className='title'>
-            <h1>Expense Tracker</h1>
+            {/* <h1>Expense Tracker</h1> */}
             </div>
             <GlobalProvider>
             <div className='display'>

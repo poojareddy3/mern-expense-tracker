@@ -16,7 +16,9 @@
 .homePage{
   color: #bf2a90;
   margin-left: 450px;
-  margin-bottom: 50px;
+  /* margin-bottom: 75px; */
+  /* background-color: #06254b; */
+  position: absolute;
 }
 .navDiv{
   background-color: #06254b;
@@ -28,15 +30,17 @@
   /* color:  #062d5f; */
 }
 .loginPage{
-  background-color:rgb(148, 198, 215);
+  background-color:rgb(165, 207, 221);
   margin: 0 auto;
+  margin-top: 100px;
   padding-top: 60px;
   width: 400px;
   height: 400px;
 }
 .signupPage{
-  background-color:rgb(148, 198, 215);
+  background-color:rgb(165, 207, 221);
   margin: 0 auto;
+  margin-top: 100px;
   padding-top:45px;
   width: 400px;
   height: 400px;
@@ -68,6 +72,7 @@
 .title{
   color: #a0730b;
   margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 .bal{
@@ -75,12 +80,13 @@
   line-height: .5;
   padding-bottom: 50px;
   margin-right: 50px;
+  margin-left: 90px;
 }
 
 .exp-container{
   display: flex;
   flex-direction: row;
-  margin-right: 120px;
+  margin-right: 100px;
 }
 
 .income{
@@ -114,6 +120,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
+  margin-top: 30px;
 }
 
 .history{

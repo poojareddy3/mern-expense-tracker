@@ -13,7 +13,7 @@ function App() {
       <Home />
       </div>
       <div className='homePage'>
-         <h1>MERN Stack Expense Tracker App</h1>
+         <h1>MERN Stack Expense Tracker</h1>
       </div>
    <main>
       <Routes>
