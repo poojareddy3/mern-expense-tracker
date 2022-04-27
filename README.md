@@ -4,7 +4,7 @@ This Project is a full stack expense tracker application
 
 ## Live Demo URL
 
-(https://luminous-mooncake-72487b.netlify.app)
+[https://luminous-mooncake-72487b.netlify.app]
 
 ### Technologies
 
